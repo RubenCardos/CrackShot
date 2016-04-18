@@ -549,13 +549,19 @@ PlayState::frameStarted
       _animBowNormal->setTimePosition(0.0);
       _animBowNormal->setEnabled(false);
     }*/
-    if(_mousePressed){
-      _animBowNormal = _sceneMgr->getEntity("entBow")->getAnimationState("tensar");
-    }else{
-      _animBowNormal = _sceneMgr->getEntity("entBow")->getAnimationState("soltar");
-    }
-    if(_animBowNormal->getTimePosition()>=_animBowNormal->getLength()-0.2){
-      _animBowNormal->setTimePosition(_animBowNormal->getLength()-0.2);
+    if (_animBowNormal->hasEnded()) {
+      if(_animBowNormal->getAnimationName()=="tensar"){
+        _animBowNormal = _sceneMgr->getEntity("entBow")->getAnimationState("tensar2"); //tensarNormal o tensarFast
+        _animBowNormal->setEnabled(true);
+        _animBowNormal->setLoop(true);
+        _animBowNormal->setTimePosition(0.0);
+      }
+      if(_animBowNormal->getAnimationName()=="soltar"){
+        _animBowNormal = _sceneMgr->getEntity("entBow")->getAnimationState("soltar2"); //tensarNormal o tensarFast
+        _animBowNormal->setEnabled(true);
+        _animBowNormal->setLoop(true);
+        _animBowNormal->setTimePosition(0.0);
+      }
     }
     else {
       _animBowNormal->addTime(_deltaT);

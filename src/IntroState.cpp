@@ -568,15 +568,15 @@ IntroState::options(const CEGUI::EventArgs &e)
   CEGUI::Window* resetButton = CEGUI::WindowManager::getSingleton().createWindow("OgreTray/Button","resetButton");
   resetButton->setText("[font='DickVanDyke'] Reset Records ");
   resetButton->setSize(CEGUI::USize(CEGUI::UDim(0.23,0),CEGUI::UDim(0.07,0)));
-  resetButton->setXPosition(UDim(0.66f, 0.0f));
-  resetButton->setYPosition(UDim(0.69f, 0.0f));
+  resetButton->setXPosition(UDim(0.40f, 0.0f));
+  resetButton->setYPosition(UDim(0.85f, 0.0f));
   resetButton->subscribeEvent(CEGUI::PushButton::EventClicked,CEGUI::Event::Subscriber(&IntroState::resetRecords,this));
 
   CEGUI::Window* configButton = CEGUI::WindowManager::getSingleton().createWindow("OgreTray/Button","configButton");
   configButton->setText("[font='DickVanDyke'] Restore Config ");
   configButton->setSize(CEGUI::USize(CEGUI::UDim(0.23,0),CEGUI::UDim(0.07,0)));
-  configButton->setXPosition(UDim(0.66f, 0.0f));
-  configButton->setYPosition(UDim(0.61f, 0.0f));
+  configButton->setXPosition(UDim(0.40f, 0.0f));
+  configButton->setYPosition(UDim(0.77f, 0.0f));
   configButton->subscribeEvent(CEGUI::PushButton::EventClicked,CEGUI::Event::Subscriber(&IntroState::resetConfig,this));
 
   CEGUI::Window* text3 = CEGUI::WindowManager::getSingleton().createWindow("TaharezLook/StaticText","FullscreenText");
