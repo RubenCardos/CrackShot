@@ -1,0 +1,35 @@
+// MatBufanda genrated by blender2ogre 0.5.8
+
+material MatBufanda 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass MatBufanda
+        {
+            ambient 0.8000000715255737 0.09422911703586578 0.049545519053936005 1.0
+            diffuse 0.640000066757203 0.07538329475199124 0.039636415833777416 1.0
+            specular 0.1687898188829422 0.1687898188829422 0.1687898188829422 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}

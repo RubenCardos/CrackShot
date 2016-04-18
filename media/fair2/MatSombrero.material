@@ -1,0 +1,35 @@
+// MatSombrero genrated by blender2ogre 0.5.8
+
+material MatSombrero 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass MatSombrero
+        {
+            ambient 0.1473155915737152 0.1100492924451828 0.06911319494247437 1.0
+            diffuse 0.11785247501511087 0.08803943526803604 0.05529055677787298 1.0
+            specular 0.1751592457294464 0.1751592457294464 0.1751592457294464 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}

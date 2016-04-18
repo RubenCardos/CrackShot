@@ -1,0 +1,35 @@
+// MatBotAspiradora genrated by blender2ogre 0.5.8
+
+material MatBotAspiradora 
+{
+    receive_shadows on 
+
+    technique
+    {
+        pass MatBotAspiradora
+        {
+            ambient 0.26334354281425476 0.1718127429485321 0.8000000715255737 1.0
+            diffuse 0.19893340144639637 0.12978975296422846 0.604331261306811 1.0
+            specular 0.24522292613983154 0.24522292613983154 0.24522292613983154 1.0 12.5
+            emissive 0.0 0.0 0.0 1.0
+
+            alpha_to_coverage off
+            colour_write on
+            cull_hardware clockwise
+            depth_check on
+            depth_func less_equal
+            depth_write on
+            illumination_stage 
+            light_clip_planes off
+            light_scissor off
+            lighting on
+            normalise_normals off
+            polygon_mode solid
+            scene_blend one zero
+            scene_blend_op add
+            shading gouraud
+            transparent_sorting on
+
+        }
+    }
+}
